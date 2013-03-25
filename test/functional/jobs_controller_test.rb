@@ -13,5 +13,6 @@ class JobsControllerTest < ActionController::TestCase
     assert_equal  "Office bitch needed!", assigns(:job).job_description
 
     assert_equal  "NW67BR", assigns(:job).postcode
+    assert_redirected_to home_splash_path
   end
 end

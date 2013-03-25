@@ -1,6 +1,7 @@
 Postcodejobs::Application.routes.draw do
   get "home/splash"
   post "users/create"
+  post "jobs/create"
 
     root :to => 'home#splash'
 

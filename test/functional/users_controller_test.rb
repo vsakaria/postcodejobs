@@ -11,6 +11,7 @@ class UsersControllerTest < ActionController::TestCase
     assert_equal 1, User.count
     assert_equal "Vishal", assigns(:user).name
 
+    assert_redirected_to home_splash_path
   end
 
   # test "user can upload file" do

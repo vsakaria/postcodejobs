@@ -38,3 +38,5 @@ gem 'pg'
 gem "debugger", "~> 1.4.0"
 
 gem 'bcrypt-ruby', :require => "bcrypt"
+
+gem 'geokit'
