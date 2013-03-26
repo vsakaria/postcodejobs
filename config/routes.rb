@@ -1,4 +1,6 @@
 Postcodejobs::Application.routes.draw do
+  get "jobseeker/create"
+
   get "home/splash"
   post "users/create"
   post "jobs/create"

@@ -15,4 +15,16 @@ class JobsControllerTest < ActionController::TestCase
     assert_equal  "NW67BR", assigns(:job).postcode
     assert_redirected_to home_splash_path
   end
+
+  # test "jobs can be found using postcode" do
+  #   #What to expect before hand
+  #   assert_equal 0, Job.localjobs.count
+
+  #   get :findlocaljobs, :job => {:postcode => "NW67BR"}
+
+  #   assert Job.localjobs.count > 0
+
+
+
+  # end
 end

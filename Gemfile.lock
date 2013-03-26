@@ -51,8 +51,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    geokit (1.6.5)
-      multi_json
+    geocoder (1.1.6)
     guard (1.6.2)
       listen (>= 0.6.0)
       lumberjack (>= 1.0.2)
@@ -142,7 +141,7 @@ DEPENDENCIES
   bcrypt-ruby
   coffee-rails (~> 3.2.1)
   debugger (~> 1.4.0)
-  geokit
+  geocoder
   guard
   guard-test
   jquery-rails

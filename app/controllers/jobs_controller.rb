@@ -6,4 +6,9 @@ def create
   redirect_to home_splash_path
 end
 
+def findlocaljobs
+  @localjobs
+
+end
+
 end
