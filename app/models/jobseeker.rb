@@ -1,5 +1,5 @@
 
 
 class Jobseeker < User
-  attr_accessible :postcode
+  attr_accessible :posuhgseihgoewasdftcode
 end
