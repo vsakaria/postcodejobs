@@ -1,11 +1,13 @@
 Postcodejobs::Application.routes.draw do
-  get "jobseeker/create"
 
-  get "home/splash"
-  post "users/create"
-  post "jobs/create"
+  # post "usercreate" => "users#create", :as => "user_create"
 
-    root :to => 'home#splash'
+  resources :jobseekers
+  resources :users
+
+  get "home" => "home#splash", :as => "home"
+
+  root :to => 'home#splash'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

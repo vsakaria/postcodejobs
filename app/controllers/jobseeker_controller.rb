@@ -1,7 +1,7 @@
 class JobseekerController < ApplicationController
 
   def create
-    @jobseeker = Jobseeker.new(params[:postcode])
+    @jobseeker = Jobseeker.new(params[:jobseeker])
     @jobseeker.save
   end
 end

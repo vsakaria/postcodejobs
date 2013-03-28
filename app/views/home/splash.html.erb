@@ -1,2 +1,60 @@
-<h1>Home#home</h1>
-<p>Find me in app/views/home/home.html.erb</p>
+
+<div>
+
+<h1 >
+  Welcome
+</h1>
+
+
+<p>Employer</p>
+
+<%= form_for(@user) do %>
+  <p>
+    <%= hidden_field_tag :user_type, :employer %>
+
+    <%= label_tag :name %><br />
+
+
+    <%= text_field_tag 'user[name]'  %>
+  </p>
+  <p>
+    <%= label_tag :email %><br />
+    <%= text_field_tag :email, params[:email], :size => "30x20"  %>
+  </p>
+  <p>
+    <%= label_tag :telephone %><br />
+    <%= text_field_tag :telephone, params[:telephone], :size => "30x20"  %>
+  </p>
+
+
+  <p class="button"><%= submit_tag "Sign in" %></p>
+<% end %>
+
+
+<p>Jobseeker</p>
+<%= form_for(@user) do |f| %>
+   <%= hidden_field_tag :user_type, :jobseeker %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :telephone %><br />
+    <%= f.text_field :telephone %>
+  </p>
+
+   <p>
+    <%= f.label :postcode %><br />
+    <%= f.text_field :postcode %>
+  </p>
+
+  <p class="button"><%= submit_tag "Sign in" %></p>
+<% end %>
+
+</div>
+
+
