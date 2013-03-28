@@ -4,6 +4,7 @@ Postcodejobs::Application.routes.draw do
 
   resources :jobseekers
   resources :users
+  resources :jobs
 
   get "home" => "home#splash", :as => "home"
 

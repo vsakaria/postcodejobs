@@ -7,27 +7,21 @@
 
 
 <p>Employer</p>
-
-<%= form_for(@user) do %>
-  <p>
-    <%= hidden_field_tag :user_type, :employer %>
-
-    <%= label_tag :name %><br />
-
-
-    <%= text_field_tag 'user[name]'  %>
-  </p>
-  <p>
-    <%= label_tag :email %><br />
-    <%= text_field_tag :email, params[:email], :size => "30x20"  %>
-  </p>
-  <p>
-    <%= label_tag :telephone %><br />
-    <%= text_field_tag :telephone, params[:telephone], :size => "30x20"  %>
-  </p>
-
-
-  <p class="button"><%= submit_tag "Sign in" %></p>
+<%= form_for(@user) do |f| %>
+<%= hidden_field_tag :user_type, :employer %>
+<p>
+  <%= f.label :name%> </br>
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :email %></br>
+  <%= f.text_field :email %>
+</p>
+<p>
+  <%= f.label :telephone %></br>
+  <%= f.text_field :telephone %>
+</p>
+<p class="button"><%= submit_tag "Sign Up" %></p>
 <% end %>
 
 
@@ -52,7 +46,7 @@
     <%= f.text_field :postcode %>
   </p>
 
-  <p class="button"><%= submit_tag "Sign in" %></p>
+  <p class="button"><%= submit_tag "Sign up" %></p>
 <% end %>
 
 </div>

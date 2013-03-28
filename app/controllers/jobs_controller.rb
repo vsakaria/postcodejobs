@@ -3,11 +3,10 @@ class JobsController < ApplicationController
 def create
   @job = Job.new(params[:job])
   @job.save
-  redirect_to home_splash_path
+  redirect_to home_path
 end
 
 def findlocaljobs
-  @localjobs
 
 end
 
