@@ -3,7 +3,7 @@ require 'test_helper'
 class UsersControllerTest < ActionController::TestCase
 
   test "new employee can sign up" do
-    assert_equal 0, User.count
+    assert_equal 0, Employer.count
 
 
     post :create, {:user_type => "Employer", :user => {:name => "Vishal", :email => "vsakaria@gmail.com", :telephone => "07930110405"}}
@@ -16,7 +16,7 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "new jobseeker can sign up" do
-    assert_equal 0, User.count
+    assert_equal 0, Jobseeker.count
 
     post :create, {:user_type => "Jobseeker", :user => {:name => "Vishal", :email => "vsakaria@gmail.com", :telephone => "07930110405", :postcode => "NW67BR"}}
 
