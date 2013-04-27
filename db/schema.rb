@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20130328105058) do
     t.string   "name"
     t.string   "email"
     t.string   "telephone"
-    t.string   "type"
+    t.string   "type"       #Field used to setup the STI
     t.string   "postcode"
   end
 
